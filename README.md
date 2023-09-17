@@ -1,8 +1,12 @@
-## [KHUDA] 경희대학교 도서관 책 추천 GPT : desKHU
+[KHUDA] 경희대학교 도서관 책 추천 GPT : desKHU<br>
+Recommendation System for Kyunhee University Library: desKHU
+============================================================
 ```
 경희대학교 도서관에는 여러분을 위한 책이 기다리고 있습니다.
+Books are waiting for you at Kyunghee University Library.
 ```
-***desKHU***는 사용자의 관심사를 입력하면 경희대학교 도서관에 소장된 책 중에서 관심사에 맞는 책을 추천해주는 서비스입니다.
+***desKHU***는 사용자의 관심사를 입력하면 경희대학교 도서관에 소장된 책 중에서 관심사에 맞는 책을 추천해주는 서비스입니다.<br>
+***desKHU*** is a service that recommends books that suit your interests among the books in the library of Kyunghee University when you enter your interests.
 
 본 프로젝트의 메인 아이디어는 사용자의 관심사와 책 소개에 기반한 Content-Based Filtering입니다. 
 1. 사용자의 관심사를 텍스트로 입력받아 이와 관련된 쿼리를 생성합니다. 
@@ -11,6 +15,14 @@
 4. 소장된 책을 중심으로 책 소개와 사용자의 관심사를 임베딩하여 유사도를 계산합니다.
 5. 사용자의 관심사와 가장 유사한 소개를 갖는 책 k개 추천합니다.
 > desKHU를 이용하여 관심사에 맞는 도서를 찾아보세요!
+
+The main idea of this project is Content-Based Filtering based on user interest and book introduction. 
+1. Create a query related to the user's interests by entering them in text. 
+2. Search for a book based on that query.
+3. Check the collection information through the book's isbn.
+4. We calculate the similarity by embedding book introductions and users' interests around the books we have.
+5. I recommend k books that have the most similar introduction to your interests.
+> Use desKHU to find books that suit your interests!
 
 ## Members
 |                     최용빈                     |                홍민혁                |             
@@ -30,18 +42,19 @@
 <img width="500" alt="스크린샷 2023-07-23 오전 1 35 16" src="https://github.com/whybe-choi/khuda-project-3/assets/64704608/b25e2362-e704-473c-b97e-cc8cfa0d4732">
 
 ## How to use
-1. 필요한 패키지 설치
+1. 필요한 패키지 설치 Install Required Pacakages
 ```
 pip install -r requirements.txt
 ```
-2. streamlit 실행
+2. streamlit 실행 Execute Streamlit
 ```
 streamlit run app.py
 ```
-3. OpenAI API 키 입력 / GPT 모델 및 추천 결과 수 선택
+3. OpenAI API 키 입력 / GPT 모델 및 추천 결과 수 선택<br>
+   Enter OpenAI API key / Select GPT model and number of recommended results
 <img width="319" alt="스크린샷 2023-07-25 오전 10 52 42" src="https://github.com/whybe-choi/khuda-project-3/assets/64704608/e6c0550c-39da-4144-917e-89640586021e">
 
-4. 관심사 입력
+5. 관심사 입력 Enter interests
 <img width="672" alt="스크린샷 2023-07-25 오전 10 57 19" src="https://github.com/whybe-choi/khuda-project-3/assets/64704608/79cc3bfb-b4d8-4817-a406-1f8e0ef806f4">
 
 ## Reference
