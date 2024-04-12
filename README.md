@@ -1,5 +1,5 @@
 [KHUDA] 경희대학교 도서관 책 추천 GPT : desKHU<br>
-Recommendation System for Kyunhee University Library: desKHU
+Recommendation System for Kyunghee University Library: desKHU
 ============================================================
 ```
 경희대학교 도서관에는 여러분을 위한 책이 기다리고 있습니다.
